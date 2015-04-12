@@ -1,0 +1,24 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ this.page.title }}</title>
+        <link type="text/css" rel="stylesheet" href="{{ 'assets/css/theme.css'|theme }}"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+    <body>
+
+        <!-- Page -->
+        {% page %}
+
+        <!-- Scripts -->
+        <script src="{{ [
+            '@jquery',
+            '@framework',
+            'assets/vendor/materializecss/js/bin/materialize.min.js',
+            'assets/js/init.js',
+        ]|theme }}"></script>
+
+    </body>
+</html>
